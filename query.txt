@@ -38,5 +38,5 @@
 
 
 8. Quanti posti letto ha l'hotel in totale?
-    SELECT COUNT(`beds`) AS 'posti_letto_totali'
+    SELECT SUM(`beds`) AS 'posti_letto_totali'
     FROM `stanze`;
