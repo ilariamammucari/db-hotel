@@ -57,3 +57,14 @@
     INNER JOIN `paganti`
     ON `paganti`.`id` = `pagamenti`.`pagante_id`
     WHERE `prenotazioni`.`id` = 7
+
+BONUS:
+1. Come si chiamano gli ospiti che hanno fatto più di due prenotazioni? :
+
+
+
+2. Le stanze sono state tutte prenotate almeno una volta? :
+    SELECT *
+    FROM `stanze`
+    LEFT JOIN `prenotazioni`
+    ON `stanze`.`id` = `prenotazioni`.`stanza_id`
