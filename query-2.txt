@@ -68,3 +68,4 @@ BONUS:
     FROM `stanze`
     LEFT JOIN `prenotazioni`
     ON `stanze`.`id` = `prenotazioni`.`stanza_id`
+    WHERE `prenotazioni`.`stanza_id` IS NULL;
